@@ -1,18 +1,17 @@
-a = input("Masukan kata:")
-b = int(len(a))
+a=input("Masukkan kata :")
 
+b=int(len(a))
 
 def cetak_kata(a):
-    if  b %2 == 0:
-        aa = a[0:3]
-        ab = a[-3]
-        print("Huruf yang diambil pada kata", a, "adalah ", aa, "dan", ab)
+    if b%2==0:
+        a11=a[0:2+1]
+        a12=a[-3:]
+        print("Huruf yang diambil pada kata",a,"adalah",a11,"dan",a12)
 
     else:
-        bagian = int((b-3)/2)
-        b = a[bagian:-bagian]
-        print("Huruf yang diambil pada kata", a, "adalah", b)
-        return a
+        bagian=int((b-3)/2)
+        a1=a[bagian:-bagian]
+        print("Huruf yang diambil pada kata",a,"adalah",a1)
+        
     
-
-
+cetak_kata(a)
